@@ -6,8 +6,10 @@
 trigger:
 - main
 
-pool:
-  vmImage: vishalvm1
+pool: default
+demands:
+- agent.name -equals vishalvm1
+  
 
 steps:
 - task: Maven@3
